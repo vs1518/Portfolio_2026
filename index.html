@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio de Valeriya Shin — Développeuse Fullstack Java / Spring Boot / Angular" />
+  <title>Valeriya Shin — Portfolio</title>
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+  <div id="top"></div>
+  <a class="skip" href="#content">Aller au contenu</a>
+
+  <header class="topbar" id="top">
+    <div class="container topbar__inner">
+      <a class="brand" href="#top" aria-label="Retour en haut">
+        <span class="brand__dot"></span>
+        <span class="brand__text">Valeriya Shin</span>
+      </a>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <a class="nav__link" href="#about">À propos</a>
+        <a class="nav__link" href="#skills">Compétences</a>
+        <a class="nav__link" href="#projects">Projets</a>
+        <a class="nav__link" href="#resume">Parcours</a>
+        <a class="nav__link" href="#education">Formation</a>
+        <a class="nav__link" href="#contact">Contact</a>
+      </nav>
+
+      <div class="topbar__actions">
+        <button class="iconbtn" id="themeToggle" type="button" aria-label="Changer le thème">
+          <span class="iconbtn__icon" aria-hidden="true">☀</span>
+        </button>
+        <a class="btn btn--primary" href="#contact">Me contacter</a>
+        <button class="iconbtn iconbtn--menu" id="menuBtn" type="button" aria-label="Ouvrir le menu">
+          <span aria-hidden="true">☰</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile" id="mobileNav" hidden>
+      <div class="container mobile__inner">
+        <a href="#about">À propos</a>
+        <a href="#skills">Compétences</a>
+        <a href="#projects">Projets</a>
+        <a href="#resume">Parcours</a>
+        <a href="#education">Formation</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="content">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="badge">Développeuse Fullstack</p>
+          <h1>
+            Java / Spring Boot, Angular —
+            <span class="grad">je construis des apps solides</span>
+            et orientées produit.
+          </h1>
+          <p class="lead">
+            Alternante à la DSI RATP sur une solution de réservation de flex office.
+            <br>Je cherche un CDI à partir de septembre 2026.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#projects">Voir mes projets</a>
+            <a class="btn btn--ghost" href="#resume">Mon parcours</a>
+          </div>
+
+          <div class="hero__meta">
+            <div class="meta">
+              <div class="meta__k">Stack</div>
+              <div class="meta__v">Java 17 · Spring Boot · Angular · MySQL · Git</div>
+            </div>
+            <div class="meta">
+              <div class="meta__k">Localisation</div>
+              <div class="meta__v">Paris · Hybride</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__card">
+          <div class="profile">
+            <img class="profile__img" src="assets/img/photo-portfolio.png" alt="Photo de Valeriya Shin" />
+            <div class="profile__info">
+              <div class="profile__name">Valeriya Shin</div>
+              <div class="profile__role">Junior Backend Java / Spring Boot</div>
+            </div>
+          </div>
+
+          <div class="chips">
+            <span class="chip">Spring Boot</span>
+            <span class="chip">REST API</span>
+            <span class="chip">SQL</span>
+            <span class="chip">Swagger</span>
+            <span class="chip">Docker</span>
+          </div>
+
+          <div class="cardnote">
+            <div class="cardnote__title">Ce que j’aime livrer</div>
+            <ul class="list">
+              <li>APIs propres + DTO/Validation</li>
+              <li>Architecture claire + tests</li>
+              <li>UI simple & efficace</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head">
+          <h2>À propos</h2>
+        </div>
+
+        <div class="grid2">
+          <div class="card prose">
+            <h3>Mon parcours</h3>
+            <p>
+              Originaire du Kazakhstan, j’ai quitté mon pays en 2014 avec une ambition claire : me former dans le pays
+              de la haute gastronomie, là où l’excellence culinaire est une véritable institution. J’ai intégré l’une des
+              écoles de cuisine les plus prestigieuses de France, avant de perfectionner mes techniques pendant sept ans
+              dans des restaurants étoilés. Une expérience exigeante, où j’ai appris à allier rigueur, créativité et quête
+              constante de perfection.
+            </p>
+          </div>
+
+          <div class="card prose">
+            <h3>Pourquoi le développement ?</h3>
+            <p>
+              À un tournant de ma vie, j’ai voulu transposer cette exigence dans un domaine tout aussi rigoureux et
+              passionnant : le développement d’applications. Ce choix ne s’est pas fait au hasard. Dans un secteur où la
+              précision, l’attention aux détails et la capacité à délivrer sous pression sont essentielles, mon parcours
+              en gastronomie s’est révélé être un atout stratégique.
+            </p>
+            <p>
+              Actuellement en dernière année de master en informatique, je travaille au sein de la Direction des Systèmes
+              d’Information de la RATP sur un projet de réservation de flex office, que je développe de bout en bout. Ce
+              projet constitue également le socle de mon mémoire de fin d’études et m’a permis d’approfondir concrètement
+              le langage Java ainsi que le framework Spring Boot.
+            </p>
+            <p>
+              À l’issue de mon master, prévu en septembre 2026, je souhaite intégrer une équipe technique en tant que
+              développeuse Junior backend Java / Spring Boot, au sein d’un environnement stimulant, où la qualité et la
+              progression continue sont valorisées.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__head">
+          <h2>Compétences</h2>
+        </div>
+
+        <div class="skills">
+          <div class="card">
+            <h3>Backend</h3>
+            <div class="pillrow">
+              <span class="pill">Java 17</span>
+              <span class="pill">Spring Boot</span>
+              <span class="pill">REST</span>
+              <span class="pill">JPA/Hibernate</span>
+              <span class="pill">Validation</span>
+              <span class="pill">Swagger/OpenAPI</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Frontend</h3>
+            <div class="pillrow">
+              <span class="pill">Angular</span>
+              <span class="pill">TypeScript</span>
+              <span class="pill">HTML/CSS</span>
+              <span class="pill">UX</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Outils</h3>
+            <div class="pillrow">
+              <span class="pill">Git/GitHub</span>
+              <span class="pill">Postman</span>
+              <span class="pill">Docker (bases)</span>
+              <span class="pill">MySQL</span>
+              <span class="pill">CI/CD (notions)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__head">
+          <h2>Projets</h2>
+        </div>
+
+        <div class="projects">
+          <article class="card project">
+            <div class="project__top">
+              <h3>FlexReserve — Réservation de postes (RATP)</h3>
+              <span class="tag">Java · Spring Boot · Angular</span>
+            </div>
+            <p>
+              Plateforme interne de réservation de flex office : endpoints REST, règles métier,
+              persistance, gestion d’erreurs, documentation API.
+            </p>
+            <div class="project__links">
+              <a class="link" href="#" aria-disabled="true">Code privé</a>
+              <a class="link" href="#contact">Démo / détails</a>
+            </div>
+          </article>
+
+          <article class="card project">
+            <div class="project__top">
+              <h3>Mini Google Docs — Éditeur collaboratif</h3>
+              <span class="tag">Node · Socket.io · React</span>
+            </div>
+            <p>
+              Édition temps réel, gestion des documents, websocket events, UI de liste, navigation.
+            </p>
+            <div class="project__links">
+              <a class="link" href="https://github.com/GuilhermeDias02/Docs" aria-disabled="true">Voir sur GitHub</a>
+            </div>
+          </article>
+
+          <article class="card project">
+            <div class="project__top">
+              <h3>JavaCore — Exercices & algo</h3>
+              <span class="tag">Java</span>
+            </div>
+            <p>
+              Boucles, conditions, nombres premiers, optimisation, structuration et logique.
+            </p>
+            <div class="project__links">
+              <a class="link" href="https://github.com/vs1518/JavaCore" aria-disabled="true">Voir sur GitHub</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section class="section" id="resume">
+      <div class="container">
+        <div class="section__head">
+          <h2>Parcours</h2>
+        </div>
+
+        <!-- Alternance RATP -->
+        <div class="timeline">
+          <div class="card titem">
+            <div class="titem__date">2024 — 2026</div>
+            <div class="titem__body">
+              <h3>DSI RATP — Développeuse Fullstack (Alternance)</h3>
+              <p>93160 Noisy-le-Grand</p>
+              <p>Spring Boot / Angular — FlexReserve (réservation de postes).</p>
+            </div>
+          </div>
+
+        <!-- Stage BNP Paribas -->
+      <div class="card titem">
+        <div class="titem__date">2023 — 2024</div>
+        <div class="titem__body">
+          <h3>BNP Paribas ITG — Assistant IT (Stage)</h3>
+          <p>93100 Montreuil</p>
+          <p class="muted">
+            Gestion du chiffrement et archivage des données RH.
+          </p>
+          <ul class="list">
+            <li>Utilisation de TIBCO EBX (MDM)</li>
+            <li>Gestion des tickets via ServiceNow</li>
+            <li>Suivi des demandes et coordination via Jira</li>
+          </ul>
+        </div>
+      </div>
+
+           
+          <!-- Restauration -->
+          <div class="card titem">
+            <div class="titem__date">Jusqu’à 2023</div>
+            <div class="titem__body">
+              <h3>Restauration — Cheffe (restaurants étoilés)</h3>
+              <p>75000 Paris</p>
+              <p>Rigueur, organisation, pression, qualité d’exécution, sens du détail.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION (AJOUTÉ) -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section__head">
+          <h2>Formation</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="card titem">
+            <div class="titem__date">En cours</div>
+            <div class="titem__body">
+              <h3>Diplôme de Dev Manager FullStack — Bac +5</h3>
+              <p><strong>EFREI</strong>, Paris, France</p>
+              <p class="muted">
+                EFREI forme des experts en technologies de l'information, combinant excellence technique et compétences en
+                innovation pour répondre aux enjeux du numérique et du digital.
+              </p>
+            </div>
+          </div>
+
+          <div class="card titem">
+            <div class="titem__date">2023</div>
+            <div class="titem__body">
+              <h3>Diplôme de Concepteur Développeur d’Application — Bac +3/4</h3>
+              <p><strong>DesCodeuses</strong>, Paris, France</p>
+              <p class="muted">
+                DesCodeuses un organisme de formation qui vise à rendre le secteur de la tech plus inclusif en offrant des formations
+                gratuites en développement web et en data science, principalement destinées aux femmes et aux personnes
+                sous-représentées dans la tech.
+              </p>
+            </div>
+          </div>
+
+          <div class="card titem">
+            <div class="titem__date">2014 — 2015</div>
+            <div class="titem__body">
+              <h3>Diplôme de cuisine</h3>
+              <p><strong>Le Cordon Bleu</strong>, Paris, France</p>
+              <p class="muted">
+                Le Cordon Bleu Paris est une école culinaire de renommée internationale, qui a formé certains des plus
+                grands chefs du monde.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section__head">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="grid2">
+          <div class="card">
+            <h3>Me joindre</h3>
+            <p class="muted">Le plus simple : mail ou LinkedIn.</p>
+            <div class="contactlist">
+              <a class="linkbig"
+                href="https://mail.google.com/mail/?view=cm&to=shin.v@outlook.fr"
+                target="_blank">shin.v@outlook.fr</a>
+              <a class="linkbig" href="https://github.com/vs1518" target="_blank" rel="noreferrer">GitHub: vs1518</a>
+              <a class="linkbig" href="https://www.linkedin.com/in/vs1518" target="_blank" rel="noreferrer">LinkedIn: vs1518</a>
+            </div>
+          </div>
+
+          <form 
+         class="card form" 
+         action="https://formspree.io/f/mreaogko" 
+         method="POST">
+         <h3>Message</h3>
+
+        <label>
+        <span>Nom</span>
+        <input type="text" name="name" required />
+        </label>
+
+        <label>
+        <span>Email</span>
+        <input type="email" name="email" required />
+        </label>
+
+        <label>
+        <span>Message</span>
+        <textarea name="message" rows="5" required></textarea>
+        </label>
+
+        <button class="btn btn--primary" type="submit">
+        Envoyer
+        </button>
+        </form>
+    </div>
+    </div>
+    </section>
+</main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Valeriya Shin</p>
+      <a class="link" href="#top">Haut ↑</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
