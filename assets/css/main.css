@@ -316,18 +316,21 @@ h1{
   display: grid;
   grid-template-columns: 320px 1fr;
   gap: 40px;
-  align-items: start;
+  align-items: stretch; /* IMPORTANT */
 }
 
+/* Colonne photo */
+.about-photo {
+  height: 100%;
+}
+
+/* Image prend toute la hauteur de la colonne */
 .about-photo img {
-  width: 100%;
+ .about-photo img {
   border-radius: 24px;
   object-fit: cover;
-  box-shadow: var(--shadow);
+  filter: contrast(1.05) saturate(1.05);
 }
-
-.about-content h3 {
-  margin-top: 0;
 }
 
 /* Responsive */
@@ -337,7 +340,8 @@ h1{
   }
 
   .about-photo {
-    max-width: 300px;
+    height: 400px;
+    max-width: 320px;
     margin: 0 auto;
   }
 }
