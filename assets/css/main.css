@@ -400,38 +400,84 @@ a.link:hover::after{
   gap: 16px;
 }
 
-/* Layout About */
-.about-layout {
-  display: grid;
-  grid-template-columns: 320px 1fr;
-  gap: 40px;
-  align-items: stretch; /* IMPORTANT */
+.about-layout{
+  display:flex;
+  align-items:flex-start;
+  gap:60px;
 }
 
-/* Colonne photo */
-.about-photo {
-  height: 100%;
-  margin-top: 20px;
+.about-photo img{
+  width:340px;
+  border-radius:18px;
 }
 
+.about-content{
+  max-width:650px;
+  line-height:1.47;
+  margin-top:0;
+  padding-top:0;
+}
 
-/* Image prend toute la hauteur de la colonne */
-.about-photo img {
-  border-radius: 24px;
-  object-fit: cover;
-  filter: contrast(1.05) saturate(1.05);
+.about-content p{
+  margin-bottom:18px;
+}
+
+.about-content p:first-child{
+  margin-top:0;
 }
 
 /* Responsive */
-@media (max-width: 900px) {
+/* TÉLÉPHONE */
+@media (max-width: 768px) {
   .about-layout {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
   }
 
   .about-photo {
-    height: 400px;
-    max-width: 320px;
-    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-photo img {
+    width: 180px;
+    max-width: 55vw;
+    border-radius: 16px;
+  }
+
+  .about-content {
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+    line-height: 1.65;
+  }
+
+  .about-content p {
+    margin-bottom: 16px;
+  }
+}
+
+/* PETITS TÉLÉPHONES */
+@media (max-width: 480px) {
+  .about-layout {
+    gap: 18px;
+  }
+
+  .about-photo img {
+    width: 140px;
+    max-width: 50vw;
+    border-radius: 14px;
+  }
+
+  .about-content {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .about-content p {
+    margin-bottom: 14px;
   }
 }
 
