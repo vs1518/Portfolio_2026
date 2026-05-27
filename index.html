@@ -1,47 +1,49 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" data-lang="fr">
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Portfolio de Valeriya Shin — Développeuse Fullstack Java / Spring Boot / React" />
-  <title>Valeriya Shin — Portfolio</title>
+  <meta name="description" content="Portfolio de Valeriya Shin — Développeuse Fullstack Java / Spring Boot / React" data-i18n-attr="content:meta.description" />
+  <title data-i18n="meta.title">Valeriya Shin — Portfolio</title>
 
-  <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-
-  <!-- CSS -->
   <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
 <body>
   <div id="top"></div>
-  <a class="skip" href="#content">Aller au contenu</a>
+  <a class="skip" href="#content" data-i18n="skip">Aller au contenu</a>
 
   <header class="topbar" id="top">
     <div class="container topbar__inner">
-      <a class="brand" href="#top" aria-label="Retour en haut">
+      <a class="brand" href="#top" aria-label="Retour en haut" data-i18n-attr="aria-label:brand.aria">
         <span class="brand__dot"></span>
         <span class="brand__text">Valeriya Shin</span>
       </a>
 
-      <nav class="nav" aria-label="Navigation principale">
-        <a class="nav__link" href="#about">À propos</a>
-        <a class="nav__link" href="#skills">Compétences</a>
-        <a class="nav__link" href="#projects">Projets</a>
-        <a class="nav__link" href="#resume">Parcours</a>
-        <a class="nav__link" href="#education">Formation</a>
-        <a class="nav__link" href="#contact">Contact</a>
+      <nav class="nav" aria-label="Navigation principale" data-i18n-attr="aria-label:nav.aria">
+        <a class="nav__link" href="#about" data-i18n="nav.about">À propos</a>
+        <a class="nav__link" href="#skills" data-i18n="nav.skills">Compétences</a>
+        <a class="nav__link" href="#projects" data-i18n="nav.projects">Projets</a>
+        <a class="nav__link" href="#resume" data-i18n="nav.resume">Parcours</a>
+        <a class="nav__link" href="#education" data-i18n="nav.education">Formation</a>
+        <a class="nav__link" href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
 
       <div class="topbar__actions">
-        <button class="iconbtn" id="themeToggle" type="button" aria-label="Changer le thème">
+        <button class="langbtn" id="langToggle" type="button" aria-label="Switch language" aria-pressed="false">
+          <span class="langbtn__item" data-lang-label="fr">FR</span>
+          <span class="langbtn__separator">/</span>
+          <span class="langbtn__item" data-lang-label="en">EN</span>
+        </button>
+        <button class="iconbtn" id="themeToggle" type="button" aria-label="Changer le thème" data-i18n-attr="aria-label:theme.aria">
           <span class="iconbtn__icon" aria-hidden="true">☀</span>
         </button>
-        <a class="btn btn--primary" href="#contact">Me contacter</a>
-        <button class="iconbtn iconbtn--menu" id="menuBtn" type="button" aria-label="Ouvrir le menu">
+        <a class="btn btn--primary" href="#contact" data-i18n="cta.contact">Me contacter</a>
+        <button class="iconbtn iconbtn--menu" id="menuBtn" type="button" aria-label="Ouvrir le menu" data-i18n-attr="aria-label:menu.aria">
           <span aria-hidden="true">☰</span>
         </button>
       </div>
@@ -49,440 +51,175 @@
 
     <div class="mobile" id="mobileNav" hidden>
       <div class="container mobile__inner">
-        <a href="#about">À propos</a>
-        <a href="#skills">Compétences</a>
-        <a href="#projects">Projets</a>
-        <a href="#resume">Parcours</a>
-        <a href="#education">Formation</a>
-        <a href="#contact">Contact</a>
+        <a href="#about" data-i18n="nav.about">À propos</a>
+        <a href="#skills" data-i18n="nav.skills">Compétences</a>
+        <a href="#projects" data-i18n="nav.projects">Projets</a>
+        <a href="#resume" data-i18n="nav.resume">Parcours</a>
+        <a href="#education" data-i18n="nav.education">Formation</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
       </div>
     </div>
   </header>
 
   <main id="content">
-    <!-- HERO -->
     <section class="hero">
       <div class="container hero__grid">
         <div class="hero__copy">
-          <p class="badge">Développeuse Fullstack</p>
-          <h1>
-            Java / Spring Boot, React —
-            <span class="grad">je construis des apps solides</span>
-            et orientées produit
-          </h1>
-          <p class="lead">
-            Alternante à la DSI RATP sur une solution de réservation de flex
-            office.
-            <br />Je cherche un CDI à partir de septembre 2026.
-          </p>
+          <p class="badge" data-i18n="hero.badge">Développeuse Fullstack</p>
+          <h1 data-i18n="hero.title">Java / Spring Boot, React — <span class="grad">je construis des apps solides</span> et orientées produit</h1>
+          <p class="lead" data-i18n="hero.lead">Alternante à la DSI RATP sur une solution de réservation de flex office.<br />Je cherche un CDI à partir de septembre 2026.</p>
 
           <div class="hero__cta">
-            <a class="btn btn--primary" href="#projects">Voir mes projets</a>
-            <a class="btn btn--ghost" href="#resume">Mon parcours</a>
+            <a class="btn btn--primary" href="#projects" data-i18n="hero.projectsBtn">Voir mes projets</a>
+            <a class="btn btn--ghost" href="#resume" data-i18n="hero.resumeBtn">Mon parcours</a>
           </div>
 
           <div class="hero__meta">
             <div class="meta">
-              <div class="meta__k">Stack</div>
-              <div class="meta__v">
-                Java 17 · Spring Boot · React · MySQL · Git
-              </div>
+              <div class="meta__k" data-i18n="hero.stackLabel">Stack</div>
+              <div class="meta__v">Java 17 · Spring Boot · React · MySQL · Git</div>
             </div>
             <div class="meta">
-              <div class="meta__k">Localisation</div>
-              <div class="meta__v">Paris · Hybride</div>
+              <div class="meta__k" data-i18n="hero.locationLabel">Localisation</div>
+              <div class="meta__v" data-i18n="hero.location">Paris · Hybride</div>
             </div>
           </div>
         </div>
 
         <div class="hero__card">
           <div class="profile">
-            <img class="profile__img" src="assets/img/Photo_LinkedIn.jpg" alt="Photo de Valeriya Shin" />
+            <img class="profile__img" src="assets/img/Photo_LinkedIn.jpg" alt="Photo de Valeriya Shin" data-i18n-attr="alt:profile.alt" />
             <div class="profile__info">
               <div class="profile__name">Valeriya Shin</div>
-              <div class="profile__role">
-                Junior Backend Java / Spring Boot
-              </div>
+              <div class="profile__role" data-i18n="profile.role">Junior Backend Java / Spring Boot</div>
             </div>
           </div>
 
           <div class="chips">
-            <span class="chip">Spring Boot</span>
-            <span class="chip">REST API</span>
-            <span class="chip">SQL</span>
-            <span class="chip">Swagger</span>
-            <span class="chip">Docker</span>
+            <span class="chip">Spring Boot</span><span class="chip">REST API</span><span class="chip">SQL</span><span class="chip">Swagger</span><span class="chip">Docker</span>
           </div>
 
           <div class="cardnote">
-            <div class="cardnote__title">Ce que j’aime livrer</div>
+            <div class="cardnote__title" data-i18n="profile.deliveryTitle">Ce que j’aime livrer</div>
             <ul class="list">
-              <li>APIs propres + DTO/Validation</li>
-              <li>Architecture claire + tests</li>
-              <li>UI simple & efficace</li>
+              <li data-i18n="profile.delivery1">APIs propres + DTO/Validation</li>
+              <li data-i18n="profile.delivery2">Architecture claire + tests</li>
+              <li data-i18n="profile.delivery3">UI simple & efficace</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ABOUT -->
     <section class="section" id="about">
       <div class="container">
-        <div class="section__head">
-          <h2>À propos</h2>
-        </div>
-
+        <div class="section__head"><h2 data-i18n="about.title">À propos</h2></div>
         <div class="about-layout">
-          <!-- COLONNE GAUCHE : PHOTO -->
-          <div class="about-photo">
-            <img src="assets/img/Photo_LinkedIn.jpg" alt="Photo de Valeriya Shin" />
-          </div>
-
-          <!-- COLONNE DROITE : TEXTE COMPLET -->
+          <div class="about-photo"><img src="assets/img/Photo_LinkedIn.jpg" alt="Photo de Valeriya Shin" data-i18n-attr="alt:profile.alt" /></div>
           <div class="about-content prose prose--justify">
-            <p>
-              Originaire du Kazakhstan, j’ai quitté mon pays en 2014 avec une
-              ambition claire : me former dans le pays de la haute
-              gastronomie, là où l’excellence culinaire est une véritable
-              institution.
-            </p>
-
-            <p>
-              J’ai intégré l’une des écoles de cuisine les plus prestigieuses
-              de France, avant de perfectionner mes techniques pendant sept
-              ans dans des restaurants étoilés. Une expérience exigeante, où
-              j’ai appris à allier rigueur, créativité et quête constante de perfection.
-            </p>
-
-            <p>
-              À un tournant de ma vie, j’ai voulu transposer cette exigence
-              dans un domaine tout aussi rigoureux et passionnant : le
-              développement d’applications. Ce choix ne s’est pas fait au
-              hasard. Dans un secteur où la précision, l’attention aux détails
-              et la capacité à délivrer sous pression sont essentielles, mon
-              parcours en gastronomie s’est révélé être un atout stratégique.
-            </p>
-
-            <p>
-              Actuellement en dernière année de master, je travaille à la
-              <span class="hl">DSI de la RATP</span>
-              sur un projet de réservation de flex office, que je développe de
-              bout en bout. Ce projet constitue également le socle de mon
-              mémoire de fin d’études et m’a permis d’approfondir concrètement
-              le langage
-              <span class="hl">Java ainsi que le framework Spring Boot.</span>
-            </p>
-
-            <p>
-              À l’issue de mon master, prévu en septembre 2026, je souhaite
-              intégrer une équipe technique en tant que développeuse
-              <span class="hl">Junior backend Java / Spring Boot</span>, au
-              sein d’un environnement stimulant, où la qualité et la
-              progression continue sont valorisées.
-            </p>
+            <p data-i18n="about.p1">Originaire du Kazakhstan, j’ai quitté mon pays en 2014 avec une ambition claire : me former dans le pays de la haute gastronomie, là où l’excellence culinaire est une véritable institution.</p>
+            <p data-i18n="about.p2">J’ai intégré l’une des écoles de cuisine les plus prestigieuses de France, avant de perfectionner mes techniques pendant sept ans dans des restaurants étoilés. Une expérience exigeante, où j’ai appris à allier rigueur, créativité et quête constante de perfection.</p>
+            <p data-i18n="about.p3">À un tournant de ma vie, j’ai voulu transposer cette exigence dans un domaine tout aussi rigoureux et passionnant : le développement d’applications. Ce choix ne s’est pas fait au hasard. Dans un secteur où la précision, l’attention aux détails et la capacité à délivrer sous pression sont essentielles, mon parcours en gastronomie s’est révélé être un atout stratégique.</p>
+            <p data-i18n="about.p4">Actuellement en dernière année de master, je travaille à la <span class="hl">DSI de la RATP</span> sur un projet de réservation de flex office, que je développe de bout en bout. Ce projet constitue également le socle de mon mémoire de fin d’études et m’a permis d’approfondir concrètement le langage <span class="hl">Java ainsi que le framework Spring Boot.</span></p>
+            <p data-i18n="about.p5">À l’issue de mon master, prévu en septembre 2026, je souhaite intégrer une équipe technique en tant que développeuse <span class="hl">Junior backend Java / Spring Boot</span>, au sein d’un environnement stimulant, où la qualité et la progression continue sont valorisées.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SKILLS -->
     <section class="section" id="skills">
       <div class="container">
-        <div class="section__head">
-          <h2>Compétences</h2>
-        </div>
-
+        <div class="section__head"><h2 data-i18n="skills.title">Compétences</h2></div>
         <div class="skills">
-          <div class="card">
-            <h3>Backend</h3>
-            <div class="pillrow">
-              <span class="pill">Java 17</span>
-              <span class="pill">Spring Boot</span>
-              <span class="pill">REST</span>
-              <span class="pill">JPA/Hibernate</span>
-              <span class="pill">Validation</span>
-              <span class="pill">Swagger/OpenAPI</span>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3>Frontend</h3>
-            <div class="pillrow">
-              <span class="pill">React</span>
-              <span class="pill">TypeScript</span>
-              <span class="pill">HTML/CSS</span>
-              <span class="pill">UX</span>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3>Outils</h3>
-            <div class="pillrow">
-              <span class="pill">Git/GitHub</span>
-              <span class="pill">Postman</span>
-              <span class="pill">Docker (bases)</span>
-              <span class="pill">MySQL</span>
-              <span class="pill">CI/CD (notions)</span>
-            </div>
-          </div>
+          <div class="card"><h3>Backend</h3><div class="pillrow"><span class="pill">Java 17</span><span class="pill">Spring Boot</span><span class="pill">REST</span><span class="pill">JPA/Hibernate</span><span class="pill">Validation</span><span class="pill">Swagger/OpenAPI</span></div></div>
+          <div class="card"><h3>Frontend</h3><div class="pillrow"><span class="pill">React</span><span class="pill">TypeScript</span><span class="pill">HTML/CSS</span><span class="pill">UX</span></div></div>
+          <div class="card"><h3 data-i18n="skills.tools">Outils</h3><div class="pillrow"><span class="pill">Git/GitHub</span><span class="pill">Postman</span><span class="pill" data-i18n="skills.docker">Docker (bases)</span><span class="pill">MySQL</span><span class="pill" data-i18n="skills.cicd">CI/CD (notions)</span></div></div>
         </div>
       </div>
     </section>
 
-    <!-- PROJECTS -->
     <section class="section" id="projects">
       <div class="container">
-        <div class="section__head">
-          <h2>Projets</h2>
-        </div>
-
+        <div class="section__head"><h2 data-i18n="projects.title">Projets</h2></div>
         <div class="projects">
           <article class="card project">
-            <div class="project__top">
-              <h3>FlexReserve — Réservation de postes (RATP)</h3>
-              <span class="tag">Java · Spring Boot · React</span>
-            </div>
-            <p>
-              Plateforme interne de réservation de flex office : endpoints
-              REST, règles métier, persistance, gestion d’erreurs,
-              documentation API.
-            </p>
-            <div class="project__links">
-              <a class="link" href="#" aria-disabled="true">Code privé</a>
-              <a class="link" href="#contact">Démo / détails</a>
-            </div>
+            <div class="project__top"><h3 data-i18n="projects.flex.title">FlexReserve — Réservation de postes (RATP)</h3><span class="tag">Java · Spring Boot · React</span></div>
+            <p data-i18n="projects.flex.desc">Plateforme interne de réservation de flex office : endpoints REST, règles métier, persistance, gestion d’erreurs, documentation API.</p>
+            <div class="project__links"><a class="link" href="#" aria-disabled="true" data-i18n="projects.private">Code privé</a><a class="link" href="#contact" data-i18n="projects.demo">Démo / détails</a></div>
           </article>
-
           <article class="card project">
-            <div class="project__top">
-              <h3>Mini Google Docs — Éditeur collaboratif</h3>
-              <span class="tag">Node · Socket.io · React</span>
-            </div>
-            <p>
-              Édition temps réel, gestion des documents, websocket events, UI
-              de liste, navigation.
-            </p>
-            <div class="project__links">
-              <a class="link" href="https://github.com/GuilhermeDias02/Docs" aria-disabled="true">Voir sur GitHub</a>
-            </div>
+            <div class="project__top"><h3 data-i18n="projects.docs.title">Mini Google Docs — Éditeur collaboratif</h3><span class="tag">Node · Socket.io · React</span></div>
+            <p data-i18n="projects.docs.desc">Édition temps réel, gestion des documents, websocket events, UI de liste, navigation.</p>
+            <div class="project__links"><a class="link" href="https://github.com/GuilhermeDias02/Docs" data-i18n="projects.github">Voir sur GitHub</a></div>
           </article>
-
           <article class="card project">
-            <div class="project__top">
-              <h3>JavaCore — Exercices & algo</h3>
-              <span class="tag">Java</span>
-            </div>
-            <p>
-              Boucles, conditions, nombres premiers, optimisation,
-              structuration et logique.
-            </p>
-            <div class="project__links">
-              <a class="link" href="https://github.com/vs1518/JavaCore" aria-disabled="true">Voir sur GitHub</a>
-            </div>
+            <div class="project__top"><h3 data-i18n="projects.javacore.title">JavaCore — Exercices & algo</h3><span class="tag">Java</span></div>
+            <p data-i18n="projects.javacore.desc">Boucles, conditions, nombres premiers, optimisation, structuration et logique.</p>
+            <div class="project__links"><a class="link" href="https://github.com/vs1518/JavaCore" data-i18n="projects.github">Voir sur GitHub</a></div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- RESUME -->
     <section class="section" id="resume">
       <div class="container">
-        <div class="section__head">
-          <h2>Parcours</h2>
-        </div>
-
-        <!-- Alternance RATP -->
+        <div class="section__head"><h2 data-i18n="resume.title">Parcours</h2></div>
         <div class="timeline">
           <div class="card titem titem--primary">
-  <div class="titem__date">Sept. 2024 — Sept. 2026</div>
-
-  <div class="titem__body">
-    <h3>RATP, DSI — Développeuse Fullstack Java (Alternance)</h3>
-    <p class="muted">93160 Noisy-le-Grand</p>
-
-    <p class="titem__intro">
-      Conception et développement d’une application interne de réservation
-      de postes de travail (Flex-Office), développée en autonomie
-      dans un contexte grande entreprise.
-    </p>
-
-    <ul class="list">
-      <li>Architecture backend en Java / Spring Boot (API REST, JPA, Hibernate)</li>
-      <li>Modélisation des entités et gestion des règles métier (conflits de réservation, statuts)</li>
-      <li>Base de données MySQL : relations, intégrité, optimisation des requêtes</li>
-      <li>Analyse des besoins et rédaction des spécifications techniques</li>
-      <li>Versioning Git, suivi des tâches via Jira</li>
-    </ul>
-
-    <p class="muted">
-      <strong>Stack :</strong> Java, Spring Boot, REST, JPA/Hibernate, MySQL, Git, Jira
-    </p>
-  </div>
-</div>
-          <!-- Stage BNP Paribas -->
+            <div class="titem__date" data-i18n="resume.ratp.date">Sept. 2024 — Sept. 2026</div>
+            <div class="titem__body">
+              <h3 data-i18n="resume.ratp.title">RATP, DSI — Développeuse Fullstack Java (Alternance)</h3>
+              <p class="muted">93160 Noisy-le-Grand</p>
+              <p class="titem__intro" data-i18n="resume.ratp.intro">Conception et développement d’une application interne de réservation de postes de travail (Flex-Office), développée en autonomie dans un contexte grande entreprise.</p>
+              <ul class="list"><li data-i18n="resume.ratp.li1">Architecture backend en Java / Spring Boot (API REST, JPA, Hibernate)</li><li data-i18n="resume.ratp.li2">Modélisation des entités et gestion des règles métier (conflits de réservation, statuts)</li><li data-i18n="resume.ratp.li3">Base de données MySQL : relations, intégrité, optimisation des requêtes</li><li data-i18n="resume.ratp.li4">Analyse des besoins et rédaction des spécifications techniques</li><li data-i18n="resume.ratp.li5">Versioning Git, suivi des tâches via Jira</li></ul>
+              <p class="muted"><strong>Stack :</strong> Java, Spring Boot, REST, JPA/Hibernate, MySQL, Git, Jira</p>
+            </div>
+          </div>
           <div class="card titem">
             <div class="titem__date">2023 — 2024</div>
             <div class="titem__body">
-              <h3>BNP Paribas ITG — Assistant IT (Stage)</h3>
-              <p class="muted">93100 Montreuil</p>
-              <p>
-                Support et gestion de données RH : sécurisation, archivage, et
-                traitement de demandes via outils ITSM.
-              </p>
-              <ul class="list">
-                <li>
-                  Gestion du chiffrement et de l’archivage des données RH
-                  (suivi, conformité, traçabilité)
-                </li>
-                <li>
-                  Utilisation de TIBCO EBX (MDM) : manipulation et contrôle de
-                  données référentielles
-                </li>
-                <li>Gestion de tickets et coordination : ServiceNow, Jira</li>
-              </ul>
-              <p class="muted">
-                <strong>Environnement :</strong> ServiceNow, Jira, TIBCO EBX
-                (MDM)
-              </p>
+              <h3 data-i18n="resume.bnp.title">BNP Paribas ITG — Assistant IT (Stage)</h3><p class="muted">93100 Montreuil</p>
+              <p data-i18n="resume.bnp.desc">Support et gestion de données RH : sécurisation, archivage, et traitement de demandes via outils ITSM.</p>
+              <ul class="list"><li data-i18n="resume.bnp.li1">Gestion du chiffrement et de l’archivage des données RH (suivi, conformité, traçabilité)</li><li data-i18n="resume.bnp.li2">Utilisation de TIBCO EBX (MDM) : manipulation et contrôle de données référentielles</li><li data-i18n="resume.bnp.li3">Gestion de tickets et coordination : ServiceNow, Jira</li></ul>
+              <p class="muted"><strong data-i18n="resume.environment">Environnement :</strong> ServiceNow, Jira, TIBCO EBX (MDM)</p>
             </div>
           </div>
-
-          <!-- Restauration -->
           <div class="card titem">
             <div class="titem__date">2015 — 2023</div>
             <div class="titem__body">
-              <h3>Cheffe de cuisine — Restaurants gastronomiques / étoilés</h3>
-              <p class="muted">75000 Paris</p>
-              <p>
-                Parcours en environnements exigeants : rigueur, gestion des priorités, travail d’équipe et qualité
-                d’exécution.
-                Cette expérience renforce aujourd’hui ma capacité à livrer proprement, sous contrainte et avec méthode.
-              </p>
-              <ul class="list">
-                <li>Organisation et exécution sous forte pression (service)</li>
-                <li>Standards élevés : qualité, précision, sens du détail</li>
-                <li>Coordination d’équipe et communication claire</li>
-              </ul>
-            </div>
-          </div>
-    </section>
-
-    <!-- EDUCATION (AJOUTÉ) -->
-    <section class="section" id="education">
-      <div class="container">
-        <div class="section__head">
-          <h2>Formation</h2>
-        </div>
-
-        <div class="timeline">
-
-          <div class="card titem">
-            <div class="titem__date">2025 — 2026</div>
-            <div class="titem__body">
-              <h3>JirAWS Learning — Spécialisation Java & Cloud</h3>
-              <p class="muted">Formation avancée orientée backend et architecture</p>
-              <ul class="list">
-                <li>Java avancé, programmation orientée objet, bonnes pratiques</li>
-                <li>Spring & Spring Boot : API REST, architecture en couches, sécurité</li>
-                <li>Hibernate / JPA : mapping, relations, optimisation des requêtes</li>
-                <li>Introduction aux environnements Cloud (AWS)</li>
-              </ul>
-              <p class="muted"><strong>Focus :</strong> conception d’applications robustes et prêtes pour la production
-              </p>
-            </div>
-          </div>
-
-          <div class="card titem">
-            <div class="titem__date">2024 — 2026</div>
-            <div class="titem__body">
-              <h3>EFREI — Mastère Dev Manager Full Stack (Bac +5)</h3>
-              <p class="muted">Paris</p>
-              <ul class="list">
-                <li>Conception logicielle, architecture, API, bases de données</li>
-                <li>Projets fullstack orientés production (qualité, tests, documentation)</li>
-                <li>Mémoire : architecture d’une solution de réservation flex-office en grande entreprise</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="card titem">
-            <div class="titem__date">2023</div>
-            <div class="titem__body">
-              <h3>DesCodeuses — Concepteur Développeur d’Applications (Bac +3/4)</h3>
-              <p class="muted">Paris</p>
-              <ul class="list">
-                <li>Fondamentaux dev : algorithmie, web, bases de données, bonnes pratiques</li>
-                <li>Projets d’équipe : livraison, Git, communication, itérations</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="card titem">
-            <div class="titem__date">2014 — 2015</div>
-            <div class="titem__body">
-              <h3>Le Cordon Bleu — Diplôme de cuisine</h3>
-              <p class="muted">Paris</p>
-              <p class="muted">Exigence, discipline et culture du travail bien fait.</p>
+              <h3 data-i18n="resume.cuisine.title">Cheffe de cuisine — Restaurants gastronomiques / étoilés</h3><p class="muted">75000 Paris</p>
+              <p data-i18n="resume.cuisine.desc">Parcours en environnements exigeants : rigueur, gestion des priorités, travail d’équipe et qualité d’exécution. Cette expérience renforce aujourd’hui ma capacité à livrer proprement, sous contrainte et avec méthode.</p>
+              <ul class="list"><li data-i18n="resume.cuisine.li1">Organisation et exécution sous forte pression (service)</li><li data-i18n="resume.cuisine.li2">Standards élevés : qualité, précision, sens du détail</li><li data-i18n="resume.cuisine.li3">Coordination d’équipe et communication claire</li></ul>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section__head"><h2 data-i18n="education.title">Formation</h2></div>
+        <div class="timeline">
+          <div class="card titem"><div class="titem__date">2025 — 2026</div><div class="titem__body"><h3 data-i18n="education.jiraws.title">JirAWS Learning — Spécialisation Java & Cloud</h3><p class="muted" data-i18n="education.jiraws.subtitle">Formation avancée orientée backend et architecture</p><ul class="list"><li data-i18n="education.jiraws.li1">Java avancé, programmation orientée objet, bonnes pratiques</li><li data-i18n="education.jiraws.li2">Spring & Spring Boot : API REST, architecture en couches, sécurité</li><li data-i18n="education.jiraws.li3">Hibernate / JPA : mapping, relations, optimisation des requêtes</li><li data-i18n="education.jiraws.li4">Introduction aux environnements Cloud (AWS)</li></ul><p class="muted"><strong data-i18n="education.focus">Focus :</strong> <span data-i18n="education.jiraws.focus">conception d’applications robustes et prêtes pour la production</span></p></div></div>
+          <div class="card titem"><div class="titem__date">2024 — 2026</div><div class="titem__body"><h3 data-i18n="education.efrei.title">EFREI — Mastère Dev Manager Full Stack (Bac +5)</h3><p class="muted">Paris</p><ul class="list"><li data-i18n="education.efrei.li1">Conception logicielle, architecture, API, bases de données</li><li data-i18n="education.efrei.li2">Projets fullstack orientés production (qualité, tests, documentation)</li><li data-i18n="education.efrei.li3">Mémoire : architecture d’une solution de réservation flex-office en grande entreprise</li></ul></div></div>
+          <div class="card titem"><div class="titem__date">2023</div><div class="titem__body"><h3 data-i18n="education.descodeuses.title">DesCodeuses — Concepteur Développeur d’Applications (Bac +3/4)</h3><p class="muted">Paris</p><ul class="list"><li data-i18n="education.descodeuses.li1">Fondamentaux dev : algorithmie, web, bases de données, bonnes pratiques</li><li data-i18n="education.descodeuses.li2">Projets d’équipe : livraison, Git, communication, itérations</li></ul></div></div>
+          <div class="card titem"><div class="titem__date">2014 — 2015</div><div class="titem__body"><h3 data-i18n="education.cordon.title">Le Cordon Bleu — Diplôme de cuisine</h3><p class="muted">Paris</p><p class="muted" data-i18n="education.cordon.desc">Exigence, discipline et culture du travail bien fait.</p></div></div>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="contact">
       <div class="container">
-        <div class="section__head">
-          <h2>Contact</h2>
-        </div>
-
+        <div class="section__head"><h2 data-i18n="contact.title">Contact</h2></div>
         <div class="grid2">
-          <div class="card">
-            <h3>Me joindre</h3>
-            <p class="muted">Le plus simple : mail ou LinkedIn.</p>
-            <div class="contactlist">
-              <a class="linkbig" href="https://mail.google.com/mail/?view=cm&to=shin.v@outlook.fr"
-                target="_blank">shin.v@outlook.fr</a>
-              <a class="linkbig" href="https://github.com/vs1518" target="_blank" rel="noreferrer">GitHub: vs1518</a>
-              <a class="linkbig" href="https://www.linkedin.com/in/vs1518" target="_blank" rel="noreferrer">LinkedIn:
-                vs1518</a>
-            </div>
-          </div>
-
-          <form class="card form" action="https://formspree.io/f/mreaogko" method="POST">
-            <h3>Message</h3>
-
-            <label>
-              <span>Nom</span>
-              <input type="text" name="name" required />
-            </label>
-
-            <label>
-              <span>Email</span>
-              <input type="email" name="email" required />
-            </label>
-
-            <label>
-              <span>Message</span>
-              <textarea name="message" rows="5" required></textarea>
-            </label>
-
-            <button class="btn btn--primary" type="submit">Envoyer</button>
-          </form>
+          <div class="card"><h3 data-i18n="contact.reachTitle">Me joindre</h3><p class="muted" data-i18n="contact.reachDesc">Le plus simple : mail ou LinkedIn.</p><div class="contactlist"><a class="linkbig" href="https://mail.google.com/mail/?view=cm&to=shin.v@outlook.fr" target="_blank">shin.v@outlook.fr</a><a class="linkbig" href="https://github.com/vs1518" target="_blank" rel="noreferrer">GitHub: vs1518</a><a class="linkbig" href="https://www.linkedin.com/in/vs1518" target="_blank" rel="noreferrer">LinkedIn: vs1518</a></div></div>
+          <form class="card form" action="https://formspree.io/f/mreaogko" method="POST"><h3 data-i18n="contact.messageTitle">Message</h3><label><span data-i18n="contact.name">Nom</span><input type="text" name="name" required /></label><label><span data-i18n="contact.email">Email</span><input type="email" name="email" required /></label><label><span data-i18n="contact.message">Message</span><textarea name="message" rows="5" required></textarea></label><button class="btn btn--primary" type="submit" data-i18n="contact.send">Envoyer</button></form>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer__inner">
-      <p>© <span id="year"></span> Valeriya Shin</p>
-      <a class="link" href="#top">Haut ↑</a>
-    </div>
-  </footer>
-
+  <footer class="footer"><div class="container footer__inner"><p>© <span id="year"></span> Valeriya Shin</p><a class="link" href="#top" data-i18n="footer.top">Haut ↑</a></div></footer>
   <script src="assets/js/main.js"></script>
 </body>
-
 </html>
