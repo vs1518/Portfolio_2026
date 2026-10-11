@@ -16,7 +16,7 @@ const translations = {
     "cta.contact": "Me contacter",
     "hero.badge": "Développeuse Fullstack",
     "hero.title": "Java / Spring Boot, React — <span class=\"grad\">je construis des apps solides</span> et orientées produit",
-    "hero.lead": "Alternante à la DSI RATP sur une solution de réservation de flex office.<br />Je cherche un CDI à partir de septembre 2026.",
+    "hero.lead": "Développeuse Fullstack Java / Spring Boot & React, diplômée d'un Bac+5 à l'EFREI, avec 2 ans d'expérience à la DSI de la RATP.<br><strong>Disponible immédiatement pour un CDI</strong> en développement backend Java / Spring Boot ou fullstack",
     "hero.projectsBtn": "Voir mes projets",
     "hero.resumeBtn": "Mon parcours",
     "hero.stackLabel": "Stack",
@@ -113,7 +113,7 @@ const translations = {
     "cta.contact": "Contact me",
     "hero.badge": "Fullstack Developer",
     "hero.title": "Java / Spring Boot, React — <span class=\"grad\">I build reliable applications</span> with a product mindset",
-    "hero.lead": "Fullstack Java / Spring Boot & React Developer, with a Bac+5 qualification from EFREI and 2 years of professional experience at RATP's IT department.<br><strong>Available immediately for a permanent position</strong> in backend Java / Spring Boot or fullstack development.",
+    "hero.lead": "Fullstack Java / Spring Boot & React Developer, with a Bac+5 qualification from EFREI and 2 years of professional experience at RATP's IT department.<br><strong>Available immediately for a permanent position</strong> in backend Java / Spring Boot or fullstack development",
 
     "hero.projectsBtn": "View my projects",
     "hero.resumeBtn": "My experience",
